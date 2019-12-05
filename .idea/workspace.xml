@@ -2,27 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae7c5f4b-c89c-42b2-917b-e0d7cac07ae4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mAP.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird0_R202_S1.65_M00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird1_R284_S0.7_M01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird1_R352_S1.95_M00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird2_R183_S0.95_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird4_R112_S0.65_M01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird5_R355_S1.05_M11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird6_R240_S1.0_M00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird6_R268_S1.8_M11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird7_R321_S0.65_M01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird7_R50_S0.7_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird8_R5_S1.9_M11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird0_R202_S1.65_M00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird1_R284_S0.7_M01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird2_R183_S0.95_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird4_R112_S0.65_M01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird5_R355_S1.05_M11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird6_R240_S1.0_M00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird7_R50_S0.7_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird8_R5_S1.9_M11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird0_R67_S1-95_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird1_R50_S1-25_M11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird2_R124_S0-7_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird4_R337_S1-7_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird5_R10_S1-15_M11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird6_R179_S0-8_M00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird7_R32_S1-0_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird8_R141_S0-75_M01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatasetGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatasetGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird0_R67_S1-95_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird1_R50_S1-25_M11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird2_R124_S0-7_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird4_R337_S1-7_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird5_R10_S1-15_M11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird6_R179_S0-8_M00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird7_R32_S1-0_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird8_R141_S0-75_M01.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,35 +41,52 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="3514" />
+          <entry key="dummy" value="3" />
+          <entry key="py" value="5229" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="3514" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="5229" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DatasetGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+            <state relative-caret-position="1845">
+              <caret line="123" column="39" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
               <folding>
-                <element signature="e#72#82#0" expanded="true" />
+                <element signature="e#72#81#0" expanded="true" />
+                <marker date="1575563303323" expanded="true" signature="3010:3105" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mAP.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+              <folding>
+                <element signature="e#64#74#0" expanded="true" />
+                <marker date="1575574473719" expanded="true" signature="1034:1069" ph="..." />
+                <marker date="1575574473719" expanded="true" signature="1080:2131" ph="..." />
               </folding>
             </state>
           </provider>
@@ -100,7 +115,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/PVOC.py" />
         <option value="$PROJECT_DIR$/DatasetGenerator.py" />
+        <option value="$PROJECT_DIR$/mAP.py" />
       </list>
     </option>
   </component>
@@ -145,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.DatasetGenerator">
+  <component name="RunManager" selected="Python.mAP">
     <configuration name="DatasetGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="COMPVIZDATASET" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,12 +205,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mAP" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="COMPVIZDATASET" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mAP.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.DatasetGenerator" />
+      <item itemvalue="Python.mAP" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mAP" />
         <item itemvalue="Python.DatasetGenerator" />
         <item itemvalue="Python.Main" />
       </list>
@@ -235,20 +275,29 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Cargo" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2045952" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26705202" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Cargo" order="3" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DatasetGenerator.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/py-image-dataset-generator-master/image_grabber/grab_settings.py">
@@ -280,10 +329,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DatasetGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+        <state relative-caret-position="1845">
+          <caret line="123" column="39" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
           <folding>
-            <element signature="e#72#82#0" expanded="true" />
+            <element signature="e#72#81#0" expanded="true" />
+            <marker date="1575563303323" expanded="true" signature="3010:3105" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mAP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="e#64#74#0" expanded="true" />
+            <marker date="1575574473719" expanded="true" signature="1034:1069" ph="..." />
+            <marker date="1575574473719" expanded="true" signature="1080:2131" ph="..." />
           </folding>
         </state>
       </provider>

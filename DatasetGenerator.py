@@ -9,10 +9,11 @@ from os.path import isfile, join
 import random
 import math
 
+
 DATASET = "./Dataset/"
 MASKS = "./Masks/"
 BACKGROUNDS = "./Backgrounds/"
-TESTINGMASKS = "./OverlayedMasks/"
+TESTINGMASKS = "./GroundTruthMasks/"
 
 # Determine random Background
 def random_background():
@@ -53,7 +54,8 @@ def random_flip(image):
         image = image.transpose(Image.FLIP_TOP_BOTTOM)
     return image,k,j
 
-# determine random translation of the image onto the background
+
+# Determine random translation of the image onto the background
 def random_translation(image,background):
 
     w,h = image.size  # Width & height of image
@@ -72,11 +74,12 @@ def random_translation(image,background):
     return x,y
 
 
-# overlay the image onto the Background
+# Overlay the image onto the Background
 def combine(img,background,name):
     x,y = random_translation(img,background)
     background.paste(img, (x, y), img)
     background.save(DATASET+name, "PNG")
+    return x, y
 
 
 # Name the test images Bird[NUMBER]_R[Rotation]_S[SCALE]_M[FLIP_H][FLIP_W]
@@ -90,9 +93,9 @@ def namingconvention(mask,angle,scale,k,j):
     filename = filename + ".png"
     return filename
 
-# TODO make more bird crops
 
-def saveknown(img,filename):
+# Binarize the given image
+def Binarization(img):
     ld = img.load()
     width, height = img.size
     for y in range(height):
@@ -102,8 +105,13 @@ def saveknown(img,filename):
                 ld[x,y] = (255,255,255,255)
             else:
                 ld[x, y] = (0,0,0,255)
+    return img
 
-    img.save(TESTINGMASKS + filename, "PNG")
+# save the ground truth
+def saveGroundTruth(img,x,y,fname):
+    background = Image.new('RGBA', (8000, 8000),(0,0,0,255))
+    background.paste(img, (x, y), mask=img)
+    background.save(TESTINGMASKS + fname, "PNG")
 
 
 def main():
@@ -127,8 +135,9 @@ def main():
         fmask,k,j = random_flip(smask)  # compute random flips
         bg = random_background()  # pick background
         filename = namingconvention(mask,angle,scale_factor,k,j)
-        combine(fmask,bg,filename)
-        saveknown(fmask, filename)
+        x,y = combine(fmask,bg,filename)
+        bn = Binarization(fmask)
+        saveGroundTruth(bn, x, y, filename)
 
 
 if __name__ == '__main__':
