@@ -8,26 +8,28 @@ from os import listdir
 from os.path import isfile, join
 import random
 import math
-
+import cv2
 
 DATASET = "./Dataset/"
 MASKS = "./Masks/"
 BACKGROUNDS = "./Backgrounds/"
 TESTINGMASKS = "./GroundTruthMasks/"
+OGLABELS = "./Original_Labels/"
+Labels = "./Labels/"
 
-# Determine random Background
-def random_background():
-    background_list = [BACKGROUNDS + f for f in listdir(BACKGROUNDS) if isfile(join(BACKGROUNDS, f))]
-    if len(background_list) == 0:
+# Determine random mask
+def random_mask():
+    mask_list = [MASKS + f for f in listdir(MASKS) if isfile(join(MASKS, f))]
+    if len(mask_list) == 0:
         print("NO MASKS IN THE FOLDER! Terminating...")
         exit(1)
-    if len(background_list) > 1:
-        num = random.randrange(len(background_list) - 1)
+    if len(mask_list) > 1:
+        num = random.randrange(len(mask_list) - 1)
     else:
         num = 0
-    background = Image.open(background_list[num]).convert("RGBA")
-    background = background.resize((8000,8000))
-    return background
+    mask = Image.open(mask_list[num]).convert("RGBA")
+    # mask = mask.resize((8000,8000))
+    return mask,mask_list[num]
 
 # rotate image
 def random_rotation(image):
@@ -41,6 +43,7 @@ def random_scale(image):
     scale_factor = random.randrange(10, 40)/20
 
     image = image.resize((math.ceil(w*scale_factor),math.ceil(h*scale_factor)))
+    print(scale_factor)
     return image, scale_factor
 
 
@@ -63,6 +66,10 @@ def random_translation(image,background):
 
 
     if w>=j or h>=k:
+        print("Width:"+str(w))
+        print("Height:"+str(h))
+        print("Width:" + str(j))
+        print("Height:" + str(k))
         print("ERROR DUCK LARGER THAN BACKGROUND")
         exit(1)
 
@@ -109,10 +116,29 @@ def Binarization(img):
 
 # save the ground truth
 def saveGroundTruth(img,x,y,fname):
-    background = Image.new('RGBA', (8000, 8000),(0,0,0,255))
+    background = Image.new('RGBA', (960, 720),(0,0,0,255))
     background.paste(img, (x, y), mask=img)
     background.save(TESTINGMASKS + fname, "PNG")
+    label = TESTINGMASKS + fname
+    return label.split("/")[2]
 
+def combineLabels(label,original_label,new_label_filename):
+    OGlabel = os.path.join(OGLABELS,original_label)
+    newlabel = os.path.join(TESTINGMASKS,label)
+
+    img1 = cv2.imread(OGlabel)
+
+    # print(img1.size)
+
+    img2 = cv2.imread(newlabel)
+
+    # print(img2.size)
+    bit_or = cv2.bitwise_or(img2, img1)
+
+    filename = os.path.join(Labels,new_label_filename)
+
+    cv2.imwrite(filename,bit_or)
+    print()
 
 def main():
     # check if folders exist
@@ -122,22 +148,39 @@ def main():
         os.mkdir(BACKGROUNDS)
 
     mask_list = [MASKS+f for f in listdir(MASKS) if isfile(join(MASKS, f))]
-
+    bg_list = [BACKGROUNDS+f for f in listdir(BACKGROUNDS) if isfile(join(BACKGROUNDS, f))]
+    bg_list.sort()
     # Check if empty folder
-    if len(mask_list) == 0:
-        print("NO MASKS IN THE FOLDER! Terminating...")
+    if len(mask_list) == 0 or len(bg_list) == 0:
+        print("NO MASKS or BACKGROUNDS IN THE FOLDER! Terminating...")
         exit(1)
 
-    for mask in mask_list:
-        image = Image.open(mask).convert("RGBA")
-        rmask,angle = random_rotation(image)  # compute random rotations
+    for bg in bg_list:
+
+        OG_label = bg.split("/")[2][:-4] + "_L.png"
+        print(OG_label)
+
+
+        bg = Image.open(bg).convert("RGBA")
+        # bg = bg.resize((8000,8000))
+
+        mask,mask_name = random_mask()  # pick mask
+
+        # image = Image.open(mask).convert("RGBA")
+        rmask,angle = random_rotation(mask)  # compute random rotations
         smask, scale_factor = random_scale(rmask)  # compute random scaling
         fmask,k,j = random_flip(smask)  # compute random flips
-        bg = random_background()  # pick background
-        filename = namingconvention(mask,angle,scale_factor,k,j)
+
+        filename = namingconvention(mask_name,angle,scale_factor,k,j)
+        new_label_filename = filename[:-4] + "_L.png"
+        print(new_label_filename)
+
         x,y = combine(fmask,bg,filename)
         bn = Binarization(fmask)
-        saveGroundTruth(bn, x, y, filename)
+        label = saveGroundTruth(bn, x, y, filename)
+        print(label)
+        combineLabels(label,OG_label,new_label_filename)
+
 
 
 if __name__ == '__main__':

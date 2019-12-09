@@ -2,25 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae7c5f4b-c89c-42b2-917b-e0d7cac07ae4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mAP.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird0_R67_S1-95_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird1_R50_S1-25_M11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird2_R124_S0-7_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird4_R337_S1-7_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird5_R10_S1-15_M11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird6_R179_S0-8_M00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird7_R32_S1-0_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dataset/bird8_R141_S0-75_M01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/duck1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/duck2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/duck3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/duck4.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/duck5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/duck6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/duck7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/duck8.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/forest.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/sea.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backgrounds/volcano.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird0_R2_S1-95_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird1_R237_S1-6_M11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird2_R115_S1-45_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird4_R9_S0-6_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird5_R235_S1-1_M01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird6_R124_S1-5_M11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird7_R286_S1-35_M00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset/bird8_R330_S0-85_M10.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DatasetGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatasetGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird0_R67_S1-95_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird1_R50_S1-25_M11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird2_R124_S0-7_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird4_R337_S1-7_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird5_R10_S1-15_M11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird6_R179_S0-8_M00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird7_R32_S1-0_M10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OverlayedMasks/bird8_R141_S0-75_M01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroundTruthMasks/bird0_R2_S1-95_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroundTruthMasks/bird1_R237_S1-6_M11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroundTruthMasks/bird2_R115_S1-45_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroundTruthMasks/bird4_R9_S0-6_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroundTruthMasks/bird5_R235_S1-1_M01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroundTruthMasks/bird6_R124_S1-5_M11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroundTruthMasks/bird7_R286_S1-35_M00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroundTruthMasks/bird8_R330_S0-85_M10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Masks/bird0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Masks/bird0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Masks/bird1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Masks/bird1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Masks/bird2.png" beforeDir="false" afterPath="$PROJECT_DIR$/Masks/bird2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Masks/bird4.png" beforeDir="false" afterPath="$PROJECT_DIR$/Masks/bird4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Masks/bird5.png" beforeDir="false" afterPath="$PROJECT_DIR$/Masks/bird5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Masks/bird6.png" beforeDir="false" afterPath="$PROJECT_DIR$/Masks/bird6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Masks/bird7.png" beforeDir="false" afterPath="$PROJECT_DIR$/Masks/bird7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Masks/bird8.png" beforeDir="false" afterPath="$PROJECT_DIR$/Masks/bird8.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,33 +50,37 @@
     <session id="-961452987">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="6" />
+          <entry key="ipynb" value="2" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="6" />
+          <entry key="IPNB" value="2" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="py" value="5229" />
+          <entry key="py" value="6527" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="5229" />
+          <entry key="Python" value="6527" />
         </counts>
       </usages-collector>
     </session>
@@ -68,25 +90,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DatasetGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1845">
-              <caret line="123" column="39" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
+            <state relative-caret-position="1650">
+              <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
               <folding>
                 <element signature="e#72#81#0" expanded="true" />
-                <marker date="1575563303323" expanded="true" signature="3010:3105" ph="..." />
+                <marker date="1575851976851" expanded="true" signature="3731:3732" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Multiclass Semantic Segmentation using U-Net.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mAP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="1020">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="e#64#74#0" expanded="true" />
-                <marker date="1575574473719" expanded="true" signature="1034:1069" ph="..." />
-                <marker date="1575574473719" expanded="true" signature="1080:2131" ph="..." />
               </folding>
             </state>
           </provider>
@@ -116,8 +145,10 @@
       <list>
         <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/PVOC.py" />
-        <option value="$PROJECT_DIR$/DatasetGenerator.py" />
         <option value="$PROJECT_DIR$/mAP.py" />
+        <option value="$PROJECT_DIR$/Detection.py" />
+        <option value="$PROJECT_DIR$/DatasetGenerator.py" />
+        <option value="$PROJECT_DIR$/Multiclass Semantic Segmentation using U-Net.ipynb" />
       </list>
     </option>
   </component>
@@ -133,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,10 +176,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UNet-Segmentation-in-Keras-TensorFlow-master" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -162,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mAP">
+  <component name="RunManager" selected="Python.DatasetGenerator">
     <configuration name="DatasetGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="COMPVIZDATASET" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -233,8 +265,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.mAP" />
         <item itemvalue="Python.DatasetGenerator" />
+        <item itemvalue="Python.mAP" />
         <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
@@ -256,12 +288,12 @@
     <frame x="960" y="24" width="960" height="993" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2045952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21991247" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26705202" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26589596" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -300,53 +332,35 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/py-image-dataset-generator-master/image_grabber/grab_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/py-image-dataset-generator-master/download.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="e#72#82#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/py-image-dataset-generator-master/image_grabber/grab_settings.py" />
+    <entry file="file://$PROJECT_DIR$/py-image-dataset-generator-master/download.py" />
+    <entry file="file://$PROJECT_DIR$/Main.py" />
+    <entry file="file://$PROJECT_DIR$/Detection.py" />
     <entry file="file://$PROJECT_DIR$/DatasetGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1845">
-          <caret line="123" column="39" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
+        <state relative-caret-position="1650">
+          <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
           <folding>
             <element signature="e#72#81#0" expanded="true" />
-            <marker date="1575563303323" expanded="true" signature="3010:3105" ph="..." />
+            <marker date="1575851976851" expanded="true" signature="3731:3732" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mAP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="1020">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
           <folding>
             <element signature="e#64#74#0" expanded="true" />
-            <marker date="1575574473719" expanded="true" signature="1034:1069" ph="..." />
-            <marker date="1575574473719" expanded="true" signature="1080:2131" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Multiclass Semantic Segmentation using U-Net.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="65" />
         </state>
       </provider>
     </entry>
