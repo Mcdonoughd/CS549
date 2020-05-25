@@ -1,0 +1,128 @@
+﻿Daniel McDonough
+CS549
+9/7/2019
+HW2
+
+1. You have been asked to develop a medical imaging system to process a time series of 3-dimensional images of the heart, yielding a 4-dimensional image array with indices x, y, z, t. Give two distinct connectivity relations that could be used. What are a pixel’s neighbors under each connectivity relation?
+
+32-Connected
+	
+	In addition to the original 8 connections, we now connect 24 the faces of the tesseract. Given an 8-connected “grid” we now connect a time connection each of the original space connections (12) and then add 6 connections to the two time connections.
+
+Pixel coords:
+(x+-1,y+-1,z,t)
+(x+-1,y,z+-1,t)
+(x,y+-1,z+-1,t)
+(x+-1,y-+1,z,t)
+(x+-1,y,z-+1,t)
+(x,y+-1,z-+1,t)
+
+(x,y+-1,z,t+-1)
+(x,y,z+-1,t+-1)
+(x+-1,y,z,t+-1)
+
+(x,y+-1,z,t-+1)
+(x,y,z+-1,t-+1)
+(x+-1,y,z,t-+1)
+
+
+8-connected
+	Given an origin pixel, it is connected to 6 pixels in space, plus connected to 2 more pixels in relation to time (forward and backward). This is equivalent to the number of cells in a tesseract.
+
+pixel coords:
+(x+-1,y,z,t)
+(x,y+-1,z,t)
+(x,y,z+-1,t)
+(x,y,z,t+-1)
+		
+		
+		
+
+
+2. What is the inverse operation? : 
+
+	As the two operations are linea.
+	So AR * AR-1 = A 
+	The whole operation R is inverse-able if R * R-1 = I 
+	Therefore in inverse operation of 
+
+[[R T] -> [[R T]-1
+ [0 1]] ->  [0 1]] 
+
+Therefore R-1 must equal I/R or 
+
+[[RT 0]
+ [0  1]]
+
+
+
+3. 
+1. Assuming that background and object pixels are equally likely, find the decision rule that maximizes the probability of a correct decision, that is, pick the greater of P o and P b.
+
+		
+Using the a list of unexplored pixels as well of a list of b and o pixels we can keep track of how many pixels are classified, and therefore updating the probabilities.
+
+As the simgas of each class are equal we can say that the threshold is the mean of o * the mean of background / 2. As an initial threshold
+
+
+
+
+
+2. How does your answer to a. change if background and object pixels are not equally likely? Suppose that there are N o object pixels and N b background pixels,so that the total number of pixels is N=N o +N b . What is the new threshold T?
+
+
+If the pixels are not equally likely, then the previous method would not work as it as it relies on the updated ratios of the two classes and the special case of sigma o = sigma b.
+
+Where P(class|y)=P(y|class)*P(class)/P(y). p(class) can be determined by No/oo*Po > Nb/ob*Pb. 
+
+Therefore T = ln(Po*Pb)
+
+4. Not for extra credit: Binarize your selfie from HW0 in 2 ways:
+
+Original:
+
+
+
+
+
+
+
+
+
+Threshold the image such that ~50% of the pixels are black and ~50% are white.
+
+	Binarization:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Some other method of your choosing. Explain your method.
+Here I used K-means for image segmentation. Picking two random points, K-means determines the minimum mean squared error of pixels’ intensity. You can see that the colors are segmented into two but absolute black or white. Instead the color is the mean of the intensity distribution. 
+
+Algorithm adopted from: https://towardsdatascience.com/introduction-to-image-segmentation-with-k-means-clustering-83fd0a9e2fc3

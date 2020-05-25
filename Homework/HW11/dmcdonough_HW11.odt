@@ -1,0 +1,51 @@
+﻿Daniel Mcdonough
+HW11
+11/22/19
+CS549
+
+1.  
+1.  as f*b = 0, R = I, and T = +- B/2
+E = (|XL’ - XL|)2 + (|XR’ - XR|)2
+XL =  f*XCL/F*XCL = f2(Xw + b/2)/f(Xw+b/2)
+as X is a vector it can separated into its core components of x,y,z
+such that:
+X = f/z(x+-b/2),fy/z
+	Here we will consider XL is positive and XR we will consider negative.
+	as such we can substitute XL and XR from the original equation
+
+E = (f/zw(xw+b/2)-xL)2 + (f/zw(yw)-yL)2 + (f/zw(xw-b/2)-xR)2 + (f/zw(yw)-yR)2 
+
+
+	2. E d/xw = 2(f/zw(xw+b/2)-xl)(f/zw)+ 2(f/zw(xw-b/2)-xr)(f/zw)
+	E d/xw  = (zw/f)* (xw-xL – xw-xr) /2
+	E d/xw  =  (zw/f)* ((xL + xR) /2)
+
+	E d/yw = 2(f/zw(yw+b/2)-yl)(f/zw)+ 2(f/zw(yw-b/2)-yr)(f/zw)
+	E d/yw  = (zw/f)* (yw-xL – yw-yr) /2
+	E d/yw  =  (zw/f)* ((yL + yR) /2)
+
+	3. 
+
+		E d/zw = 2(f/zw)(-2fzw) + 2(f/zw)(-2fzw)(xl-xr)
+		E d/zw = 2(f2B/F/zw)(-4Fzw)delta
+		E d/zw = 2(f2B/F/zw)(-4Fzw)delta
+		= (B*delta/F*zw)(Fzw) = Xavg(B2/delta*b)
+
+2. As X world is the average of the reference images and the change in X. then as Xr is the reference for Xw then Xl is the translation of the reference image by the average of B. as there are two images then it is translated  by B/2.
+
+3.
+min(Xwl – Xwr)2
+= min(-b/2 + lXl – b/2 + rXr)2
+= min(-B + lXl – rXr)2
+= avg(Xl(Xr)+Xr(Xl)/XlXr)
+= 1/2(Xl(Xr)+Xr(Xl)/XlXr)
+= 1/2(Xl(Xr)+Xr(Xl))/(Xl2 Xr2 – (Xl * Xr)2))
+as Xl(Xr) is the similarity between the two images, we take the inverse of the difference and add them to each image
+
+Xl(Xr)= (Xr2(Xl*B)-Xl*Xr(Xr*B))XL
+Xr(Xl)= (Xl2(Xr*B)-Xr*Xl(Xl*B))XR	
+
+Therefor 	min(Xwl – Xwr)2 =
+
+1/2((Xr2(Xl*B)-Xl*Xr(Xr*B))XL+(Xl2(Xr*B)-Xr*Xl(Xl*B))XR)/(Xl2 Xr2 – (Xl * Xr)2))
+
